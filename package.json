@@ -1,0 +1,21 @@
+{
+  "name": "via-multi-agent",
+  "version": "0.14.21",
+  "private": true,
+  "description": "Local Claude Code multi-agent orchestration plugin coordinating Codex and Antigravity workers via Concord, with Via supervisor, /via-panel, and /via-desk.",
+  "homepage": "https://github.com/xu12329/via-multi-agent#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xu12329/via-multi-agent.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "test": "node --test local/*.test.mjs"
+  },
+  "dependencies": {
+    "@concord-ai/concord-mcp": "^0.23.0"
+  }
+}

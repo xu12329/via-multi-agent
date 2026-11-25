@@ -1,0 +1,25 @@
+{
+  "name": "via",
+  "version": "0.14.21",
+  "description": "Via local edition: coordinate authenticated local Codex and Antigravity workers, including live steering and focused peer feedback.",
+  "author": {
+    "name": "Sean Floyd"
+  },
+  "license": "MIT",
+  "engines": {
+    "claude-code": ">=2.1.323"
+  },
+  "mcpServers": {
+    "workers": {
+      "command": "/bin/sh",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/local/node-launch.sh",
+        "${CLAUDE_PLUGIN_ROOT}/local/claude-bridge.mjs"
+      ],
+      "env": {
+        "VIA_DESK_ENABLED": "1",
+        "VIA_CLAUDE_SESSION_SCOPE": "1"
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "via-multi-agent",
+  "owner": {
+    "name": "Sean Floyd (upstream Via)"
+  },
+  "metadata": {
+    "description": "Coordinate local Codex and Antigravity subagents from Claude Code via Concord, with supervisor monitoring, /via-panel, and /via-desk."
+  },
+  "plugins": [
+    {
+      "name": "via",
+      "source": "./",
+      "description": "Local Claude Code multi-agent orchestration plugin coordinating Codex and Antigravity workers via Concord, with supervisor monitoring, /via-panel, and /via-desk."
+    }
+  ]
+}
